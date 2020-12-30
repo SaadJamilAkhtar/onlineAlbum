@@ -1,0 +1,29 @@
+<div class="container">
+    <form class="p-5" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-2">
+                <label for="title" class="form-label">Title</label>
+            </div>
+            <div class="col-8">
+                <input id="title" class="form-control" type="text" name="title" placeholder="Title..." [(ngModel)]="title">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <label for="url" class="form-label">URL</label>
+            </div>
+            <div class="col-8">
+                <input id="url" class="form-control" type="url" name="url" placeholder="url..." [(ngModel)]="url">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <input class="btn btn-primary" style="width:100%;" type="submit" value="Save">
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </form>
+</div>

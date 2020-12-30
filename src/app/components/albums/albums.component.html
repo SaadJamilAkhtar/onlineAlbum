@@ -1,0 +1,14 @@
+<div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h1 class="text-center">All Albums</h1>
+        </li>
+    </ul>
+    <div class="container">
+        <ul class="list-group" *ngFor="let album of albums">
+            <a href="/photos/{{ album.id }}">
+                <li class="list-group-item">{{ album.id }}. {{ album.title }}</li>
+            </a>
+        </ul>
+    </div>
+</div>
